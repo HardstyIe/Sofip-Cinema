@@ -1,0 +1,49 @@
+.pseudoNav {
+  width: 100%;
+  background-color: #010163;
+
+  ul {
+    width: 60%;
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+    padding: 10px 0;
+
+    a {
+      font-size: 30px;
+      text-decoration: none;
+      padding: 5px;
+      color: #f1f1f1;
+
+      li {
+        list-style-type: none;
+      }
+    }
+
+    a:hover {
+      background-color: #ffffff;
+      border-radius: 5px;
+      color: #000000;
+    }
+  }
+}
+
+@media all and (max-width:480px) {
+
+  .pseudoNav {
+
+    ul {
+      width: 100%;
+      justify-content: space-between;
+      align-items: center;
+
+      a {
+
+        li {
+          font-size: clamp(1rem, 5vw, 5rem);
+
+        }
+      }
+    }
+  }
+}

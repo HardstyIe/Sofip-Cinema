@@ -1,0 +1,58 @@
+header {
+  height: 75px;
+  width: 100%;
+  background-color: #000049;
+
+  nav {
+    height: 75px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: #000049;
+
+
+    .logoNav {
+      width: 40%;
+
+      img {
+        margin: 0 15px;
+        padding: 5px;
+      }
+    }
+
+    ul {
+      width: 60%;
+      list-style-type: none;
+      display: flex;
+      justify-content: space-around;
+
+
+      a {
+        font-size: 30px;
+        text-decoration: none;
+        padding: 5px;
+        color: #f1f1f1;
+      }
+
+      a:hover {
+        background-color: #ffffff;
+        border-radius: 5px;
+        color: #000000;
+      }
+    }
+  }
+}
+
+@media all and (max-width:480px) {
+  header {
+
+    nav {
+      // display: none; (WIP)
+
+      li {
+        font-size: 20px;
+      }
+    }
+  }
+
+}

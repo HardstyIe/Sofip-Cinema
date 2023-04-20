@@ -1,0 +1,84 @@
+.top10Actor {
+  display: flex;
+  max-width: 100%;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 70%, rgba(9, 9, 121, 1) 100%);
+
+
+  .actorGrid {
+    width: 60%;
+    height: 100%;
+    margin: auto;
+  }
+}
+
+.gridContainer {
+  display: grid;
+  grid-template-columns: 150px 1.5fr 0.5fr;
+  grid-template-rows: 100px 100px;
+  gap: 0 20px;
+  grid-template-areas:
+    "grid_one grid_two grid_fifth"
+    "grid_one grid_three grid_four";
+  width: 100%;
+  margin: 20px 0;
+  background: transparent;
+  color: #f1f1f1;
+
+  a {
+    text-decoration: none;
+    color: aqua;
+  }
+}
+
+.grid_one {
+  grid-area: grid_one;
+}
+
+.grid_two {
+  grid-area: grid_two;
+}
+
+.grid_three {
+  grid-area: grid_three;
+}
+
+.grid_fifth {
+  grid-area: grid_fifth;
+}
+
+.grid_four {
+  grid-area: grid_four;
+}
+
+.tomHanks {
+  border-radius: 20px;
+
+  img {
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+  }
+}
+
+.alPacino {
+  border-radius: 20px;
+
+  img {
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+  }
+}
+
+
+@media all and (max-width:780px) {
+  .gridContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .grid_fifth {
+      height: 50px;
+      width: 50px;
+    }
+  }
+}
